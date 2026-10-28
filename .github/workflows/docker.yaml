@@ -39,6 +39,15 @@ jobs:
         # remove-codeql: 'true'
         build-mount-path: '/var/lib/docker/'
 
+    - name: Move containerd data to large volume
+      run: |
+        sudo systemctl stop containerd
+        sudo mkdir -p /var/lib/docker/containerd
+        sudo rsync -a /var/lib/containerd/ /var/lib/docker/containerd/ || true
+        sudo rm -rf /var/lib/containerd
+        sudo ln -s /var/lib/docker/containerd /var/lib/containerd
+        sudo systemctl start containerd
+
     - name: Restart docker
       run: sudo service docker restart
 
