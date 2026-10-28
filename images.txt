@@ -1,2 +1,3 @@
 ghcr.io/niko1221/strata:0.2.7-cuda13
 ghcr.io/peonist-ai/halogen-flash-server:0.18.17
+ghcr.io/peonist-ai/halogen:0.1.4
