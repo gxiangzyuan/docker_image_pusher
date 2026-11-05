@@ -1,3 +1,1 @@
-docker.litellm.ai/berriai/litellm:main-stable
-postgres:16
-prom/prometheus
+docker.litellm.ai/berriai/litellm:latest
