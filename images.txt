@@ -1,1 +1,1 @@
-docker.litellm.ai/berriai/litellm:latest
+ghcr.io/openclaw/openclaw
