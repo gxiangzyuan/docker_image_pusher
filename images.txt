@@ -1,1 +1,1 @@
-ghcr.io/openhands/agent-canvas:1.35.0
+ghcr.io/peonist-ai/halogen-flash-server:0.20.7
